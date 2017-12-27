@@ -14,6 +14,7 @@
 		5AAA1AD11FF3AAEC00CEDBA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AAA1ACF1FF3AAEC00CEDBA2 /* LaunchScreen.storyboard */; };
 		5AAA1ADC1FF3AAEC00CEDBA2 /* MyMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAA1ADB1FF3AAEC00CEDBA2 /* MyMapTests.swift */; };
 		5AAA1AE71FF3AAEC00CEDBA2 /* MyMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAA1AE61FF3AAEC00CEDBA2 /* MyMapUITests.swift */; };
+		5AAA1AF61FF3ACF500CEDBA2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AAA1AF51FF3ACF500CEDBA2 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5AAA1AE21FF3AAEC00CEDBA2 /* MyMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AAA1AE61FF3AAEC00CEDBA2 /* MyMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapUITests.swift; sourceTree = "<group>"; };
 		5AAA1AE81FF3AAEC00CEDBA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AAA1AF51FF3ACF500CEDBA2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AAA1AF61FF3ACF500CEDBA2 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				5AAA1ADA1FF3AAEC00CEDBA2 /* MyMapTests */,
 				5AAA1AE51FF3AAEC00CEDBA2 /* MyMapUITests */,
 				5AAA1AC41FF3AAEC00CEDBA2 /* Products */,
+				5AAA1AF41FF3ACF500CEDBA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				5AAA1AE81FF3AAEC00CEDBA2 /* Info.plist */,
 			);
 			path = MyMapUITests;
+			sourceTree = "<group>";
+		};
+		5AAA1AF41FF3ACF500CEDBA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AAA1AF51FF3ACF500CEDBA2 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,8 +441,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = APTF6C7Y7N;
 				INFOPLIST_FILE = MyMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nnnnn15z.MyMap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nnnnn15z.study;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -444,8 +457,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = APTF6C7Y7N;
 				INFOPLIST_FILE = MyMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nnnnn15z.MyMap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nnnnn15z.study;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
